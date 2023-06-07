@@ -1,0 +1,19 @@
+.footer {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer a {
+    margin-right: 30px;
+    font-size: 20px;
+    background-color: #777;
+    padding: 2px 5px !important ;
+    border-radius: 50%;
+}
+.footer a:nth-child(1):hover {
+color: #C13584;
+}
+.footer a:nth-child(3):hover {
+    color: black;
+    }

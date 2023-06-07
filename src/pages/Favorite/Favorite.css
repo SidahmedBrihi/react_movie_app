@@ -1,0 +1,13 @@
+.favorite {
+    padding-top: 100px;
+}
+.favorite .favorite-title {
+    color: var(--main-color);
+    font-style: italic;
+}
+.favorite .favorite-content {
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    margin-top: 30px;
+    gap: 10px;
+}

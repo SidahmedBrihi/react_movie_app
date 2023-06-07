@@ -1,0 +1,8 @@
+.MoviesSwiper {
+    padding: 30px 15px ;
+}
+.MoviesSwiper .moviesSwiper-title {
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}

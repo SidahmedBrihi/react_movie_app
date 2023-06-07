@@ -1,0 +1,28 @@
+.cast-items {
+display: flex;
+margin-bottom: 30px;
+flex-wrap: wrap;
+}
+@media (max-width : 650px) {
+    .cast-items {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }  
+}
+.cast-items img {
+    width: 120px;
+    height: 180px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+@media (max-width : 650px) {
+    .cast-items img {
+        width: 80px;
+        height: 140px;
+    }  
+}
+@media (max-width : 650px) {
+.cast-items .info h4 {
+   font-size: 15px; 
+}
+}

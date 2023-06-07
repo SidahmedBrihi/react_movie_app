@@ -1,0 +1,160 @@
+.movier-header {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+}
+@media (max-width : 600px) {
+    .movier-header{
+        padding-top: 50px;
+    } 
+}
+.moviedetails .content {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+@media (max-width : 850px) {
+    .moviedetails .content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.moviedetails .image {
+flex-basis: 250px;
+height: 400px;
+margin-right: 40px;
+border-radius: 5px;
+overflow: hidden;
+transform: translateX(-1000px);
+animation: scrollerleft 0.8s 1s linear;
+animation-fill-mode: forwards;
+}
+@media (max-width : 850px) {
+    .moviedetails .image {
+        flex-basis: 250px;
+        height: 400px;
+    }
+}
+@keyframes scrollerleft {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.moviedetails .image:hover {
+border: 3px solid var(--main-color);
+transform: translateY(-15px) ;
+transition: 0.3s;
+}
+.moviedetails .image img {
+width: 100%;
+height: 100%;
+}
+.moviedetails .movie-info {
+flex-basis: 300px;
+transform: translateX(+1000px);
+animation: scrollerright 0.8s 1s linear forwards;
+}
+@keyframes scrollerright {
+    0% {
+        transform: translateX(+1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.moviedetails .movie-title {
+    font-size: 45px;
+    font-style: italic;
+}
+.moviedetails .genres {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0 !important;
+}
+.moviedetails .genres .genres-items {
+    margin-right: 20px;
+    padding: 3px 10px ;
+    background-color: rgb(92 219 149 / 30%);
+    color: white ;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.moviedetails .genres .genres-items:hover {
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.moviedetails .description {
+    line-height: 1.7;
+    font-weight: bold;
+}
+@media (max-width : 600px) {
+    .moviedetails .description {
+        font-size: 13px;
+    }
+}
+@media (max-width : 600px) {
+    .moviedetails .rate {
+        flex-direction: column;
+    }
+}
+.moviedetails .vote span {
+color: rgb(245, 197, 24) ;
+font-size: 25px;
+}
+.moviedetails .popularity span {
+color:  rgb(245, 197, 24) ;
+font-size: 25px;
+}
+.moviedetails .movie-credit {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    margin-top: 50px;
+}
+.moviedetails .movie-credit .title {
+    margin-bottom: 30px ;
+    font-size: 40px;
+}
+.moviedetails .movie-credit .movie-cast  {
+flex-basis: 50%;
+
+}
+.moviedetails .movie-credit .movie-cast .content {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+@media (max-width : 900px) {
+.moviedetails .movie-credit .movie-cast .content {
+    grid-template-columns: repeat(1 , 1fr);
+}
+}
+.moviedetails .movie-credit .movie-crew  {
+flex-basis: 50%;
+
+}
+.moviedetails .movie-credit .movie-crew .content{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+ }
+ @media (max-width : 900px) {
+    .moviedetails .movie-credit .movie-crew .content {
+            grid-template-columns: repeat(1 , 1fr);
+    }
+    }
+@media (max-width : 650px ) {
+    .movie-credit .title {
+        font-size: 22px !important; 
+    }
+}

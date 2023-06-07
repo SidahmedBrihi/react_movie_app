@@ -1,0 +1,111 @@
+.HomeMovie {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.HomeMovie .movie-content {
+    width: 600px;
+    margin: 0 auto;
+    color: white;
+}
+@media (max-width : 640px) {
+    .HomeMovie .movie-content {
+        width : 80% ;
+        margin: 0 auto;
+    }
+}
+.HomeMovie .movie-content .movie-title {
+    font-weight: bold;
+    text-align: center;
+}
+.HomeMovie .genres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.HomeMovie .genres .genres-items {
+    padding: 3px 10px ;
+    background-color: rgb(92 219 149 / 30%);
+    color: white ;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.HomeMovie .genres :not(:last-child) {
+    margin-right: 20px;
+}
+.HomeMovie .genres .genres-items:hover {
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.HomeMovie .movie-description {
+    color: white;
+    line-height: 2;
+    font-size: 18px;
+    font-weight: 400;
+}
+ .HomeMovie .rate{
+justify-content: center;
+align-items: center;
+}
+@media (max-width : 600px) {
+    .HomeMovie .rate {
+        flex-direction: column;
+    }
+}
+.HomeMovie .rate .vote {
+
+}
+.HomeMovie .rate  span {
+font-size: 25px;
+color: rgb(245, 197, 24) ;
+}
+.HomeMovie .movie-links {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.HomeMovie .movie-links li {
+margin-right: 15px;
+}
+.HomeMovie .movie-links li a {
+padding: 5px 15px;
+font-weight: bold;
+border-radius: 20px;
+font-size: 18px;
+}
+.HomeMovie .movie-links li a span {
+    color: white;
+    font-size: 22px;
+}
+
+.HomeMovie .view  {
+    background-color: rgb(92 219 149 / 30%);
+}
+.HomeMovie .view:hover {
+    background-color: var(--main-color);
+    transition: 0.3s;
+    color: white;
+}
+
+.HomeMovie .favorite {
+background-color: rgb(255 255 255 / 20%);
+}
+.HomeMovie .favorite:hover {
+    color: var(--main-color);
+    background-color: white;
+    transition: 0.4s;
+}
+.HomeMovie .favorite:hover span {
+    color: var(--main-color);
+    transition: 0.4s;
+}
+.HomeMovie .favorite span {
+color: white ;
+}
